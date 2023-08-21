@@ -15,6 +15,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,7 +51,7 @@
                 <div class="kitchenware  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- first card -->
                     <div onclick=handleCardClick(this)
-                        class="card cursor-pointer h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3">
+                        class="card cursor-pointer h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3 hover:border hover:border-pink-600">
                         <figure class="mb-4 bg-[#1111110C] rounded">
                             <img src="./images/prod1.png" alt="Shoes" class="rounded-none h-[100px] py-4" />
                         </figure>
@@ -63,7 +69,8 @@
                         </div>
                     </div>
                     <!-- second card -->
-                    <div class="card h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3">
+                    <div onclick=handleCardClick(this)
+                         class="card cursor-pointer h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3 hover:border hover:border-pink-600">
                         <figure class="mb-4 bg-[#1111110C] rounded">
                             <img src="./images/prod2.png" alt="Shoes" class="rounded-none h-[100px] py-4" />
                         </figure>
@@ -81,7 +88,8 @@
                         </div>
                     </div>
                     <!-- third card -->
-                    <div class="card h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3">
+                    <div onclick=handleCardClick(this) 
+                        class="card cursor-pointer h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3 hover:border hover:border-pink-600">
                         <figure class="mb-4 bg-[#1111110C] rounded">
                             <img src="./images/prod3.png" alt="Shoes" class="rounded-none h-[100px] py-4" />
                         </figure>
@@ -103,7 +111,8 @@
                 <h2 class="font-semibold text-2xl mb-4 mt-12">Sportswear</h2>
                 <div class="sportswear grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- first card -->
-                    <div class="card h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3">
+                    <div onclick=handleCardClick(this) 
+                        class="card cursor-pointer h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3 hover:border hover:border-pink-600">
                         <figure class="mb-4 bg-[#1111110C] rounded">
                             <img src="./images/prod4.png" alt="Shoes" class="rounded-none h-[100px] py-4" />
                         </figure>
@@ -121,7 +130,8 @@
                         </div>
                     </div>
                     <!-- second card -->
-                    <div class="card h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3">
+                    <div onclick=handleCardClick(this) 
+                        class="card cursor-pointer h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3 hover:border hover:border-pink-600">
                         <figure class="mb-4 bg-[#1111110C] rounded">
                             <img src="./images/prod5.png" alt="Shoes" class="rounded-none h-[100px] py-4" />
                         </figure>
@@ -139,7 +149,8 @@
                         </div>
                     </div>
                     <!-- third card -->
-                    <div class="card h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3">
+                    <div onclick=handleCardClick(this) 
+                        class="card cursor-pointer h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3 hover:border hover:border-pink-600">
                         <figure class="mb-4 bg-[#1111110C] rounded">
                             <img src="./images/prod6.png" alt="Shoes" class="rounded-none h-[100px] py-4" />
                         </figure>
@@ -161,7 +172,8 @@
                 <h2 class="font-semibold text-2xl mb-4 mt-12">Furniture</h2>
                 <div class="furniture grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- first card -->
-                    <div class="card h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3">
+                    <div onclick=handleCardClick(this) 
+                        class="card cursor-pointer h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3 hover:border hover:border-pink-600">
                         <figure class="mb-4 bg-[#1111110C] rounded">
                             <img src="./images/prod7.png" alt="Shoes" class="rounded-none h-[100px] py-4" />
                         </figure>
@@ -179,7 +191,8 @@
                         </div>
                     </div>
                     <!-- second card -->
-                    <div class="card h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3">
+                    <div onclick=handleCardClick(this)
+                         class="card cursor-pointer h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3 hover:border hover:border-pink-600">
                         <figure class="mb-4 bg-[#1111110C] rounded">
                             <img src="./images/prod8.png" alt="Shoes" class="rounded-none h-[100px] py-4" />
                         </figure>
@@ -197,7 +210,8 @@
                         </div>
                     </div>
                     <!-- third card -->
-                    <div class="card h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3">
+                    <div onclick=handleCardClick(this) 
+                        class="card cursor-pointer h-62 bg-base-100 shadow-xl mb-8 rounded-md p-3 hover:border hover:border-pink-600">
                         <figure class="mb-4 bg-[#1111110C] rounded">
                             <img src="./images/prod9.png" alt="Shoes" class="rounded-none h-[100px] py-4" />
                         </figure>
@@ -237,33 +251,33 @@
                 <!-- purchase card -->
                 <div
                     class="block min-w-[300px] lg:min-w-0 relative mb-4 md:mb-2 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-5">
-                    <div class="selected-list mt-2" id="selected-items">
+                    <div class="selected-list mt-2 font-medium text-sm" id="selected-items">
 
                     </div>
                     <hr>
-                    <div class="selected-price-list">
-                        <p>Total Price: <span id="total-price">0.00</span> TK</p>
-                        <p>Discount:<span id="discount-price">0.00</span> TK</p>
-                        <p>Total: <span id="total">0.00</span> TK</p>
+                    <div class="selected-price-list mt-2">
+                        <p class="py-1"><span class=" font-medium">Total Price:</span> <span class="text-[#1111117F] font-medium"> <span id="total-price">0.00</span>TK</p></span>
+                        <p class=""><span class=" font-medium">Discount:</span> <span class="text-[#1111117F] font-medium"> <span id="discount-price">0.00</span>TK</p></span>
+                        <p class="py-1"><span class=" font-medium">Total: </span> <span class="text-[#1111117F] font-medium"> <span id="total">0.00</span>TK</p></span>
                     </div>
                     <hr class="my-4">
 
-                    <button disabled id="purchaseBtn"
-                        onclick="my_modal_5.showModal()"
-                        class="disabled:bg-gray-400 disabled:text-opacity-40 bg-[#E527B2] absolute w-[80%] left-[50%] translate-x-[-50%] z-10 py-2 text-white text-sm font-semibold rounded-lg ">Make
+                    <button disabled id="purchaseBtn" onclick="my_modal_5.showModal()"
+                        class="purchase-btn disabled:bg-gray-400 disabled:text-opacity-40 bg-[#E527B2] absolute w-[80%] left-[50%] translate-x-[-50%] z-10 py-2 text-white text-sm font-semibold rounded-lg ">Make
                         Purchase</button>
                 </div>
 
             </div>
         </section>
 
+        <!-- modal section starts -->
         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-            <form method="dialog" class="modal-box flex flex-col items-center">
-                <h3 class="font-bold text-lg">Hello!</h3>
-                <p class="py-4">Press ESC key or click the button below to close</p>
+            <form method="dialog" class="modal-box flex flex-col items-center justify-center lg:w-[400px] lg:h-[400px]">
+                <img class="w-[120px] mb-4" src="./images/congo.png" alt="">
+                <h3 class="font-extrabold text-3xl">Congratulations</h3>
+                <p class="py-2 text-[#1111117F]">You purchased the products</p>
                 <div class="modal-action">
-                    <!-- if there is a button in form, it will close the modal -->
-                    <button onclick=handleReset() class="btn">Go Home</button>
+                    <button onclick=handleReset() class="btn btn-secondary w-[130px] bg-[#E527B2] text-white">Go Home</button>
                 </div>
             </form>
         </dialog>
