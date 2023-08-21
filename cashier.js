@@ -20,7 +20,7 @@ function handleCardClick(card) {
     document.getElementById('total-price').innerText = totalPrice;
     document.getElementById('total').innerText = totalPrice;
 
-    if (totalPrice > 200)
+    if (totalPrice >= 200)
         document.getElementById('applyBtn').removeAttribute('disabled');
 
     if (totalPrice > 0)
