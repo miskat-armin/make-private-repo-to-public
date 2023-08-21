@@ -1,5 +1,5 @@
 let totalPrice = 0;
-
+let isDiscount = false;
 
 function handleCardClick(card) {
     const selectedItemContainer = document.getElementById('selected-items');
@@ -25,17 +25,28 @@ function handleCardClick(card) {
 
     if (totalPrice > 0)
         document.getElementById('purchaseBtn').removeAttribute('disabled');
+
+    if (isDiscount == true) {
+        const discountAmount = totalPrice * 0.20;
+        const totalDiscount = totalPrice - discountAmount;
+
+        document.getElementById('discount-price').innerText = discountAmount.toFixed(2);
+        document.getElementById('total').innerText = totalDiscount.toFixed(2);
+    }
 }
 
 function handleDiscountBtnClick() {
     const input = document.getElementById('couponInput').value;
 
     if (input == 'SELL200') {
+        isDiscount = true;
+
         const discountAmount = totalPrice * 0.20;
-        totalPrice = totalPrice - discountAmount;
+        const totalDiscountPrice = totalPrice - discountAmount;
 
         document.getElementById('discount-price').innerText = discountAmount.toFixed(2);
-        document.getElementById('total').innerText = totalPrice.toFixed(2);
+        document.getElementById('total').innerText = totalDiscountPrice.toFixed(2);
+
     }
     else {
         alert('Please use the valid promo code');
@@ -46,10 +57,12 @@ function handleDiscountBtnClick() {
 }
 
 function handleReset() {
-    
+
     document.getElementById('applyBtn').setAttribute('disabled', 'true');
     document.getElementById('purchaseBtn').setAttribute('disabled', 'true');
-    
+
+    isDiscount = false;
+
     totalPrice = 0;
     document.getElementById('total-price').innerText = totalPrice.toFixed(2);
     document.getElementById('discount-price').innerText = totalPrice.toFixed(2);
